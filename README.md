@@ -26,7 +26,7 @@ These steps walk you through creating the new control class and adding an instan
 5. Center it with Auto Layout but don't set any rules about size. Instead, your type will use an intrinsic size to tell Auto Layout how big it will be.
 6. In the Size Inspector, select Ambiguity > Verify Position Only. This supports your "no-size" layout.
 7. Use Ctrl-drag to connect your view to ViewController.swift with an IBAction. Note the "Event" pop-up currently set to "Value Changed". Look at the other options in the pop-up (like "Touch Down" and "Touch Drag Inside") but keep the event set to "Value Changed". Name your IBAction `updateRating`.  This method allows the control's client (in this case your view controller) to receive updates about changes in the rating control. 
-8. Edit the new method's signature to: `@IBAction func updateRating(_ ratingControl: CustomControl)`. This keeps you from having to cast the `sender` to the right class.
+8. Edit the new method's signature to: `@IBAction func updateRating(_ ratingControl: CustomControl)`. This keeps you from having to cast the `sender` to the right class. ***explain***
 9. Implement `updateRating`. Set the view controller's title to the string `"User Rating: N stars"` where N is the number of stars. This number is the control's visible `value` property.
 10. **Stretch**: Fix the title so it's correct for 1 ("star" not "stars") as well as 2-5.
 
